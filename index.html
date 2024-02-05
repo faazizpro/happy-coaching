@@ -17,6 +17,8 @@
           theme: {
             extend: {
               colors: {
+                'btn-bg' : '#20AD96',
+                'nav-font' : '#4A556C',
               },
               fontFamily:{
                 kumbh : ['Kumbh Sans']
@@ -26,7 +28,40 @@
         }
       </script>
 </head>
-<body>
+<body class="font-kumbh">
+    <!-- Navbar Section -->
+    <section>
+        <div class="flex items-center md:justify-between flex-col md:flex-row bg-base-100 container mx-auto bg-white py-4 px-5">
+            <div class="flex items-center">
+              <div class="dropdown lg:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-7 md:mt-2  p-2 shadow bg-base-100 rounded-box w-52 cursor-pointer text-nav-font">
+                        <li class=""><a>Home</a></li>
+                        <li class="cursor-pointer"><a>Services</a></li>
+                        <li class="cursor-pointer"><a>About Us</a></li>
+                        <li class="cursor-pointer"><a>Extra Salespage</a></li>
+                </ul>
+              </div>
+              <a href="" onclick="window.location.reload(true)" class=""><img src="./images/logo.png" alt="" srcset=""></a>
+            </div>
+            <div class=" flex gap-7">
+                <div class="flex items-center gap-7">
+                    <ul class="px-1 hidden lg:flex gap-7 text-base text-nav-font">
+                        <li class="cursor-pointer"><a>Home</a></li>
+                        <li class="cursor-pointer"><a>Services</a></li>
+                        <li class="cursor-pointer"><a>About Us</a></li>
+                        <li class="cursor-pointer"><a>Extra Salespage</a></li>
+                    </ul>
+                    <a class=" px-4 py-1 md:px-4 md:py-2 bg-btn-bg text-white rounded-md text-sm md:text-base">Get your free guide now</a>
+                </div>
+            </div>
+          </div>
+    </section>
     
-</body>
+      
+
+
+    </body>
 </html>
